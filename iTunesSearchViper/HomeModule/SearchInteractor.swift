@@ -1,0 +1,38 @@
+//
+//  SearchInteractor.swift
+//  iTunesSearchViper
+//
+//  Created by Рустам Т on 10/3/23.
+//
+
+import Foundation
+
+protocol SearchInteractorProtocol {
+    func fetchMusic(keyword: String)
+}
+
+protocol SearchInteractorOutputProtocol: AnyObject {
+    func didFetchMusic(_ results: [MusicResult])
+    func didFailToFetchMusic(_ error: Error)
+}
+
+final class SearchInteractor: SearchInteractorProtocol {
+    weak var presenter: SearchInteractorOutputProtocol?
+    let networkService: NetworkServiceProtocol
+    
+    init(networkService: NetworkServiceProtocol) {
+        self.networkService = networkService
+    }
+    
+    func fetchMusic(keyword: String) {
+        networkService.fetchMusic(keyword: keyword) { [weak self] result in
+            switch result {
+            case .success(let musicResults):
+                self?.presenter?.didFetchMusic(musicResults)
+            case .failure(let error):
+                self?.presenter?.didFailToFetchMusic(error)
+            }
+        }
+    }
+}
+

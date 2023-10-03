@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E1B0DE12ACBF765002BC39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DE02ACBF765002BC39A /* AppDelegate.swift */; };
+		8E1B0DE32ACBF765002BC39A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DE22ACBF765002BC39A /* SceneDelegate.swift */; };
+		8E1B0DE52ACBF765002BC39A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DE42ACBF765002BC39A /* SearchViewController.swift */; };
+		8E1B0DEA2ACBF766002BC39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E1B0DE92ACBF766002BC39A /* Assets.xcassets */; };
+		8E1B0DED2ACBF766002BC39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E1B0DEB2ACBF766002BC39A /* LaunchScreen.storyboard */; };
+		8E1B0DF62ACBF88F002BC39A /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DF52ACBF88F002BC39A /* SearchPresenter.swift */; };
+		8E1B0DF82ACBF8A3002BC39A /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DF72ACBF8A3002BC39A /* SearchInteractor.swift */; };
+		8E1B0DFA2ACBF8C5002BC39A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DF92ACBF8C5002BC39A /* HomeRouter.swift */; };
+		8E1B0DFD2ACBF8E0002BC39A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DFC2ACBF8E0002BC39A /* HomeTableViewCell.swift */; };
+		8E1B0E002ACBF91B002BC39A /* MusicPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0DFF2ACBF91B002BC39A /* MusicPlayerViewController.swift */; };
+		8E1B0E022ACBF937002BC39A /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E012ACBF937002BC39A /* MusicPresenter.swift */; };
+		8E1B0E062ACBF947002BC39A /* MusicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E052ACBF947002BC39A /* MusicInteractor.swift */; };
+		8E1B0E092ACBF976002BC39A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E082ACBF976002BC39A /* NetworkManager.swift */; };
+		8E1B0E0B2ACBF997002BC39A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E0A2ACBF997002BC39A /* Model.swift */; };
+		8E1B0E0E2ACBFA21002BC39A /* UIImageView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E0D2ACBFA21002BC39A /* UIImageView + Ext.swift */; };
+		8E1B0E102ACBFA80002BC39A /* SearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E0F2ACBFA80002BC39A /* SearchBuilder.swift */; };
+		8E1B0E122ACBFE20002BC39A /* Ext + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1B0E112ACBFE20002BC39A /* Ext + UIViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8E1B0DDD2ACBF765002BC39A /* iTunesSearchViper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearchViper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1B0DE02ACBF765002BC39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E1B0DE22ACBF765002BC39A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E1B0DE42ACBF765002BC39A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8E1B0DE92ACBF766002BC39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E1B0DEC2ACBF766002BC39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E1B0DEE2ACBF766002BC39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E1B0DF52ACBF88F002BC39A /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		8E1B0DF72ACBF8A3002BC39A /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
+		8E1B0DF92ACBF8C5002BC39A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		8E1B0DFC2ACBF8E0002BC39A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		8E1B0DFF2ACBF91B002BC39A /* MusicPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayerViewController.swift; sourceTree = "<group>"; };
+		8E1B0E012ACBF937002BC39A /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
+		8E1B0E052ACBF947002BC39A /* MusicInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInteractor.swift; sourceTree = "<group>"; };
+		8E1B0E082ACBF976002BC39A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		8E1B0E0A2ACBF997002BC39A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8E1B0E0D2ACBFA21002BC39A /* UIImageView + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Ext.swift"; sourceTree = "<group>"; };
+		8E1B0E0F2ACBFA80002BC39A /* SearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBuilder.swift; sourceTree = "<group>"; };
+		8E1B0E112ACBFE20002BC39A /* Ext + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext + UIViewController.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E1B0DDA2ACBF765002BC39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E1B0DD42ACBF765002BC39A = {
+			isa = PBXGroup;
+			children = (
+				8E1B0DDF2ACBF765002BC39A /* iTunesSearchViper */,
+				8E1B0DDE2ACBF765002BC39A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E1B0DDE2ACBF765002BC39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B0DDD2ACBF765002BC39A /* iTunesSearchViper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1B0DDF2ACBF765002BC39A /* iTunesSearchViper */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B0DE02ACBF765002BC39A /* AppDelegate.swift */,
+				8E1B0DE22ACBF765002BC39A /* SceneDelegate.swift */,
+				8E1B0DF42ACBF879002BC39A /* HomeModule */,
+				8E1B0DFE2ACBF902002BC39A /* DetailModule */,
+				8E1B0E072ACBF96D002BC39A /* Network */,
+				8E1B0E0C2ACBFA13002BC39A /* Ext */,
+				8E1B0DE92ACBF766002BC39A /* Assets.xcassets */,
+				8E1B0DEB2ACBF766002BC39A /* LaunchScreen.storyboard */,
+				8E1B0DEE2ACBF766002BC39A /* Info.plist */,
+			);
+			path = iTunesSearchViper;
+			sourceTree = "<group>";
+		};
+		8E1B0DF42ACBF879002BC39A /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B0DE42ACBF765002BC39A /* SearchViewController.swift */,
+				8E1B0DF52ACBF88F002BC39A /* SearchPresenter.swift */,
+				8E1B0DF72ACBF8A3002BC39A /* SearchInteractor.swift */,
+				8E1B0DF92ACBF8C5002BC39A /* HomeRouter.swift */,
+				8E1B0E0F2ACBFA80002BC39A /* SearchBuilder.swift */,
+				8E1B0DFB2ACBF8D7002BC39A /* Cell */,
+				8E1B0E0A2ACBF997002BC39A /* Model.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		8E1B0DFB2ACBF8D7002BC39A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B0DFC2ACBF8E0002BC39A /* HomeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8E1B0DFE2ACBF902002BC39A /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B0DFF2ACBF91B002BC39A /* MusicPlayerViewController.swift */,
+				8E1B0E012ACBF937002BC39A /* MusicPresenter.swift */,
+				8E1B0E052ACBF947002BC39A /* MusicInteractor.swift */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		8E1B0E072ACBF96D002BC39A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B0E082ACBF976002BC39A /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8E1B0E0C2ACBFA13002BC39A /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				8E1B0E0D2ACBFA21002BC39A /* UIImageView + Ext.swift */,
+				8E1B0E112ACBFE20002BC39A /* Ext + UIViewController.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E1B0DDC2ACBF765002BC39A /* iTunesSearchViper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1B0DF12ACBF766002BC39A /* Build configuration list for PBXNativeTarget "iTunesSearchViper" */;
+			buildPhases = (
+				8E1B0DD92ACBF765002BC39A /* Sources */,
+				8E1B0DDA2ACBF765002BC39A /* Frameworks */,
+				8E1B0DDB2ACBF765002BC39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iTunesSearchViper;
+			productName = iTunesSearchViper;
+			productReference = 8E1B0DDD2ACBF765002BC39A /* iTunesSearchViper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1B0DD52ACBF765002BC39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8E1B0DDC2ACBF765002BC39A = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8E1B0DD82ACBF765002BC39A /* Build configuration list for PBXProject "iTunesSearchViper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E1B0DD42ACBF765002BC39A;
+			productRefGroup = 8E1B0DDE2ACBF765002BC39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E1B0DDC2ACBF765002BC39A /* iTunesSearchViper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E1B0DDB2ACBF765002BC39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1B0DED2ACBF766002BC39A /* LaunchScreen.storyboard in Resources */,
+				8E1B0DEA2ACBF766002BC39A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E1B0DD92ACBF765002BC39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E1B0E0E2ACBFA21002BC39A /* UIImageView + Ext.swift in Sources */,
+				8E1B0DE52ACBF765002BC39A /* SearchViewController.swift in Sources */,
+				8E1B0DFA2ACBF8C5002BC39A /* HomeRouter.swift in Sources */,
+				8E1B0E102ACBFA80002BC39A /* SearchBuilder.swift in Sources */,
+				8E1B0E122ACBFE20002BC39A /* Ext + UIViewController.swift in Sources */,
+				8E1B0DFD2ACBF8E0002BC39A /* HomeTableViewCell.swift in Sources */,
+				8E1B0E0B2ACBF997002BC39A /* Model.swift in Sources */,
+				8E1B0DE12ACBF765002BC39A /* AppDelegate.swift in Sources */,
+				8E1B0E092ACBF976002BC39A /* NetworkManager.swift in Sources */,
+				8E1B0DF62ACBF88F002BC39A /* SearchPresenter.swift in Sources */,
+				8E1B0E022ACBF937002BC39A /* MusicPresenter.swift in Sources */,
+				8E1B0E062ACBF947002BC39A /* MusicInteractor.swift in Sources */,
+				8E1B0DE32ACBF765002BC39A /* SceneDelegate.swift in Sources */,
+				8E1B0DF82ACBF8A3002BC39A /* SearchInteractor.swift in Sources */,
+				8E1B0E002ACBF91B002BC39A /* MusicPlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E1B0DEB2ACBF766002BC39A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E1B0DEC2ACBF766002BC39A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E1B0DEF2ACBF766002BC39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E1B0DF02ACBF766002BC39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E1B0DF22ACBF766002BC39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTunesSearchViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = R.iTunesSearchViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E1B0DF32ACBF766002BC39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTunesSearchViper/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = R.iTunesSearchViper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E1B0DD82ACBF765002BC39A /* Build configuration list for PBXProject "iTunesSearchViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1B0DEF2ACBF766002BC39A /* Debug */,
+				8E1B0DF02ACBF766002BC39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E1B0DF12ACBF766002BC39A /* Build configuration list for PBXNativeTarget "iTunesSearchViper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1B0DF22ACBF766002BC39A /* Debug */,
+				8E1B0DF32ACBF766002BC39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E1B0DD52ACBF765002BC39A /* Project object */;
+}
