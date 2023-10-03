@@ -8,7 +8,7 @@
 import Foundation
 
 protocol NetworkServiceProtocol {
-    func fetchMusic(keyword: String, completion: @escaping (Result<[MusicResult], Error>) -> Void)
+    func fetchMusic(keyword: String) async throws -> [MusicResult]
 }
 
 enum NetworkError: Error {
@@ -18,38 +18,17 @@ enum NetworkError: Error {
 }
 
 final class NetworkService: NetworkServiceProtocol {
-    func fetchMusic(keyword: String, completion: @escaping (Result<[MusicResult], Error>) -> Void) {
-        guard let encodedKeyword = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
-            completion(.failure(NetworkError.invalidKeyword))
-            return
-        }
+    
+    func fetchMusic(keyword: String) async throws -> [MusicResult] {
+        guard let encodedKeyword = keyword.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { throw NetworkError.invalidKeyword }
         
         let urlString = "https://itunes.apple.com/search?term=\(encodedKeyword)"
         
-        guard let url = URL(string: urlString) else {
-            completion(.failure(NetworkError.invalidURL))
-            return
-        }
+        guard let url = URL(string: urlString) else { throw NetworkError.invalidURL }
         
-        let task = URLSession.shared.dataTask(with: url) { (data, _, error) in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-            
-            guard let data = data else {
-                completion(.failure(NetworkError.noData))
-                return
-            }
-            
-            do {
-                let decoder = JSONDecoder()
-                let musicModel = try decoder.decode(MusicModel.self, from: data)
-                completion(.success(musicModel.results))
-            } catch {
-                completion(.failure(error))
-            }
-        }
-        task.resume()
+        let response = try await URLSession.shared.data(from: url)
+        
+        let musicModel = try JSONDecoder().decode(MusicModel.self, from: response.0)
+        return musicModel.results
     }
 }

@@ -24,13 +24,14 @@ final class SearchInteractor: SearchInteractorProtocol {
         self.networkService = networkService
     }
     
+    
     func fetchMusic(keyword: String) {
-        networkService.fetchMusic(keyword: keyword) { [weak self] result in
-            switch result {
-            case .success(let musicResults):
-                self?.presenter?.didFetchMusic(musicResults)
-            case .failure(let error):
-                self?.presenter?.didFailToFetchMusic(error)
+        Task {
+            do {
+                let musicAlbums = try await self.networkService.fetchMusic(keyword: keyword)
+                self.presenter?.didFetchMusic(musicAlbums)
+            } catch let error {
+                self.presenter?.didFailToFetchMusic(error)
             }
         }
     }
